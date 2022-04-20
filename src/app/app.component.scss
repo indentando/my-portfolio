@@ -1,0 +1,65 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 100% ;
+    width: 100%;
+    .main-section{
+        background-color: #222831;
+        width: 50%;
+        .nav-link {
+            color: #EEEEEE;
+        }
+    }
+    .other-sections {
+        width: 50%;
+        overflow-y: scroll;    
+        .photo-section {
+            background-image: url('https://images.unsplash.com/photo-1627502208346-b835b72c0f05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHw%3D&w=1000&q=80');
+            width: 100%;
+            height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          } 
+        .about-section { 
+            background-color: #ff4eff;
+            width: 100%;
+            height: 100%;
+        }
+        .experience-section {
+            background-color: #008cff;
+            width: 100%;
+            height: 100%;
+        } 
+        .contact-section {
+            background-color: #27913e;
+            width: 100%;
+            height: 100%;
+        }
+    }   
+}
+
+.animation ul li a{
+    animation-name: fade-in;
+    animation-fill-mode: both;
+    animation-duration: 4s
+}
+$animationDelay: 1;
+@for $i from 1 through 15 {
+	.animation ul li a:nth-of-type(#{$i}) {
+		//animation-delay: #{0.3+($i)/30}s;
+        animation-delay: #{0.3+($i)/30}s;
+  }
+}
+
+@keyframes fade-in {
+  0% { 
+      opacity: 0; 
+      //transform: translateY(80%);
+    }
+  100% { 
+      opacity: 1; 
+      transform: translateY(50%);
+    }
+}

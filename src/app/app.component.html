@@ -1,9 +1,9 @@
-<div class="main">
+<div class="wrapper">
   <div class="main-section">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div class="animation collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
+          <ol class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" href="#about">About</a>
             </li>
@@ -13,15 +13,76 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
-          </ul>
+          </ol>
         </div>
       </div>
-    </nav>
+    </nav>  
+    <div class="main-content">
+      <div class="hello-main-content" data-aos="fade-down" data-aos-duration="1000"><span>Hello!</span></div>
+      <div class="name-main-content" data-aos="fade-right" data-aos-duration="1500"><span>I'm Alex Dorado</span></div>
+      <div class="desc-main-content" data-aos="fade-left" data-aos-duration="2000"><span>Junior FullStack Web Developer based in Barcelona</span></div>
+      <div class="socialmedia-content">
+        <div data-aos="fade-up" data-aos-duration="2500">
+          <button class="socialmedia-button" mat-mini-fab aria-label="Example icon button with a menu icon">
+            <img class="socialmedia-img" src="../assets/icons8-github-24.png">
+          </button>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="3000">
+          <button class="socialmedia-button" mat-mini-fab aria-label="Example icon button with a menu icon">
+            <img class="socialmedia-img" color="sm-color" src="../assets/icons8-linkedin-24.png">
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="other-sections">
-    <div id="photo" class="photo-section"></div>
-    <div id="about" class="about-section"></div>
-    <div id="experience" class="experience-section"></div>
-    <div id="contact" class="contact-section"></div>
+    <div class="photo-section"></div>
+    <div id="about" class="about-section">about</div>
+    <div id="experience" class="experience-section">
+      <div></div>
+      <div data-aos="fade-up"><p>Junior FullStack Web Developer</p></div>
+    </div>
+    <div id="contact" class="contact-section">
+    </div>
   </div>
 </div>
+
+<!-- <div class="main">
+  <div class="main-section">
+    <div class="fixed">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="animation collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+            <ol class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </nav>    
+      <div class="main-content">
+        <div class="presentation-main-content"><h6>Hello, my name is</h6></div>
+        <div class="name-main-content"><h1>ALEX DORADO</h1></div>
+        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+      </div>
+    </div>
+  </div>
+  <div class="other-sections">
+    <div class="scrollable">
+      <div id="photo" class="photo-section"></div>
+      <div class="about-section" ></div>
+      <div class="section experience-section" ></div>    
+      <div id="contact" class="contact-section section">
+        <div class="test w-50"><p>testttttta</p></div>
+        <div data-aos="fade-up" data-aos-anchor=".contact-section"><p>testeeaaaeee</p></div>
+      </div>
+    </div>
+  </div>
+</div> -->

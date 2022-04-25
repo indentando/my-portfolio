@@ -1,0 +1,8 @@
+@import 'aos/dist/aos.css';
+
+html {
+    scroll-behavior: smooth;    
+}
+body {
+    counter-reset: item-counter;
+}
